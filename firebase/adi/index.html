@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>firebase weblearn</title>
+</head>
+
+<body>
+  <div id="body">
+    <h1 id="fireHeading">Enter text to site</h1>
+    <textarea rows="6" cols="50" placeholder="Type Something Cool!" id="mainText"></textarea>
+
+  </div>
+
+  <button type="button" id="submitBtn" onclick="submitClick()"></button>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDnpDweUtJeAx_QwDvtkzPuA7as217LuWM",
+      authDomain: "fir-web-213dc.firebaseapp.com",
+      databaseURL: "https://fir-web-213dc.firebaseio.com",
+      projectId: "fir-web-213dc",
+      storageBucket: "fir-web-213dc.appspot.com",
+      messagingSenderId: "1071080504468"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+  </script>
+</body>
+
+</html>
